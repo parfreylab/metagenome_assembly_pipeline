@@ -84,6 +84,17 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 
 ## Overview
 
+- [Section 1: File preprocessing][section1]
+- [Section 2: Assembly][section2]
+- [Section 3: Assembly quality evaluation][section3]
+- [Section 4: Coverage][section4]
+- [Section 5: Filtering contigs][section5]
+- [Section 6: Binning][section6]
+- [Section 7: Binning quality evaluation][section7]
+- [Section 8: Binning, taxonomy and bin befinement in An'vio][section8]
+- [Section 9: Functional annotation and basic plots][section9]
+- [Section 10: Functional annotation with PROKKA and Krona plots][section10]
+
 ## Issues
 
 Any issues or clarification needed can be raised by creating a new issue in this repository. Alternatively, you can email me at kevchan1@alumni.ubc.ca.
@@ -113,4 +124,14 @@ Any issues or clarification needed can be raised by creating a new issue in this
 [krona-link]: https://github.com/marbl/Krona/wiki
 [blast-link]: https://www.ncbi.nlm.nih.gov/books/NBK279684/
 [megan-link]: https://ab.inf.uni-tuebingen.de/software/megan6
+[section1]: #
+[section2]: #
+[section3]: #
+[section4]: #
+[section5]: #
+[section6]: #
+[section7]: #
+[section8]: #
+[section9]: #
+[section10]: #
 
