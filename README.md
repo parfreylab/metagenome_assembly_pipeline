@@ -11,6 +11,23 @@ Prior to getting started, look over the [software list](#exhaustive-list-of-soft
 
 You can preview each step of the pipeline under the [overview](#overview) section.
 
+## Overview
+
+- [Section 1: File preprocessing][section1]
+- [Section 2: Assembly][section2]
+- [Section 3: Assembly quality evaluation][section3]
+- [Section 4: Coverage][section4]
+- [Section 5: Filtering contigs][section5]
+- [Section 6: Binning][section6]
+- [Section 7: Binning quality evaluation][section7]
+- [Section 8: Binning, taxonomy and bin befinement in An'vio][section8]
+- [Section 9: Functional annotation and basic plots][section9]
+- [Section 10: Functional annotation with PROKKA and Krona plots][section10]
+
+## Issues
+
+Any issues or clarification needed can be raised by creating a new issue in this repository. Alternatively, you can email me at kevchan1@alumni.ubc.ca.
+
 ## Exhaustive list of software used
 
 Note that many of these tools can be installed through conda or homebrew. Try those options first before a manual install.
@@ -81,23 +98,6 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 
 <sup>1</sup>: Linux/cluster use only <br/>
 <sup>2</sup>: High memory usage
-
-## Overview
-
-- [Section 1: File preprocessing][section1]
-- [Section 2: Assembly][section2]
-- [Section 3: Assembly quality evaluation][section3]
-- [Section 4: Coverage][section4]
-- [Section 5: Filtering contigs][section5]
-- [Section 6: Binning][section6]
-- [Section 7: Binning quality evaluation][section7]
-- [Section 8: Binning, taxonomy and bin befinement in An'vio][section8]
-- [Section 9: Functional annotation and basic plots][section9]
-- [Section 10: Functional annotation with PROKKA and Krona plots][section10]
-
-## Issues
-
-Any issues or clarification needed can be raised by creating a new issue in this repository. Alternatively, you can email me at kevchan1@alumni.ubc.ca.
 
 [fastqc-link]: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 [multiqc-link]: http://multiqc.info/
