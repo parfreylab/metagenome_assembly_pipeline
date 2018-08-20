@@ -13,6 +13,7 @@ You can preview each step of the pipeline under the [overview](#overview) sectio
 
 ## Overview
 
+- [Section 0: Prelude][section0]
 - [Section 1: File preprocessing][section1]
 - [Section 2: Assembly][section2]
 - [Section 3: Assembly quality evaluation][section3]
@@ -124,6 +125,7 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 [krona-link]: https://github.com/marbl/Krona/wiki
 [blast-link]: https://www.ncbi.nlm.nih.gov/books/NBK279684/
 [megan-link]: https://ab.inf.uni-tuebingen.de/software/megan6
+[section0]: section_0/
 [section1]: section_1/
 [section2]: #
 [section3]: #
