@@ -127,13 +127,13 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 [megan-link]: https://ab.inf.uni-tuebingen.de/software/megan6
 [section0]: section_0/
 [section1]: section_1/
-[section2]: #
-[section3]: #
-[section4]: #
-[section5]: #
-[section6]: #
-[section7]: #
-[section8]: #
-[section9]: #
-[section10]: #
+[section2]: section_2
+[section3]: section_3
+[section4]: section_4
+[section5]: section_5
+[section6]: section_6
+[section7]: section_7
+[section8]: section_8
+[section9]: section_9
+[section10]: section_10
 
