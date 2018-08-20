@@ -124,7 +124,7 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 [krona-link]: https://github.com/marbl/Krona/wiki
 [blast-link]: https://www.ncbi.nlm.nih.gov/books/NBK279684/
 [megan-link]: https://ab.inf.uni-tuebingen.de/software/megan6
-[section1]: #
+[section1]: section_1/
 [section2]: #
 [section3]: #
 [section4]: #
