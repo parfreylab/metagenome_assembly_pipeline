@@ -15,6 +15,8 @@ The authors of MetaBAT also have a short [tutorial][metabat2-binning-tutorial-li
 ```bash
 # -m: min contig length (default 2500)
 runMetaBat.sh -t 8 -v --unbinned -m 2000 filtered_contigs.fasta sorted.bam
+# runMetaBat.sh doesn't let you specify the output folder name, so rename it like so
+mv filtered_contigs.fasta.metabat-bins2000 metabat_bins
 ```
 
 ## MaxBin2
