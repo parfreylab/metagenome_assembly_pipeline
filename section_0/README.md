@@ -15,6 +15,20 @@ these different tools and documentations, it can get overwhelming. To try and ma
 
 For questions like: What parameters should I adjust? What k-mer size should I use? Am I being too stringent with filtering? Often times there is no one universal answer for best practices, as each dataset is different. But generally, the tools used in this pipeline have default values for each parameter. The authors of each tool likely had good reasons to arrive at the values they did, and so it's best not to stray too far from those values unless you have a compelling reason to. It's always a good idea to use Google search, Biostars, and SEQanswers (linked above) as well to get more opinions if you are unsure. 
 
+## Obtaining the data
+
+Most data will be found on the Parfrey lab folder under the Zoology file server. If you are working with the data on a local machine, use `rsync` to copy it locally. Here is an example command with an [explanation][rsync-explanation-link] of the flags:
+
+```bash
+rsync -chavzP --stats [source] [target]
+```
+
+Which may look more like this for our use case:
+
+```bash
+rsync -chavzP --stats your.login@zoology.ubc.ca:/path/to/data /path/to/data/folder/locally
+```
+
 ## Next step
 
 Proceed to [section 1][section1-link].
@@ -26,3 +40,4 @@ Proceed to [section 1][section1-link].
 [biostars-link]: https://www.biostars.org/
 [seq-answers-link]: http://seqanswers.com/forums/
 [section1-link]: ../section_1/
+[rsync-explanation-link]: https://explainshell.com/explain?cmd=rsync+--chavzP+--stats+%5Bsource%5D+%5Btarget%5D
