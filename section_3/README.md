@@ -17,6 +17,6 @@ Compare the two assemblies. Which assembly has the better size statistics? Which
 
 ## Next step
 
-Proceed to [section 4][section4-link].
+**NOTE**: the following sections will assume you chose the `metaSPAdes` assembly and associated files (for no reason other than to simplify the commands). Proceed to [section 4][section4-link].
 
 [section4-link]: ../section_4
