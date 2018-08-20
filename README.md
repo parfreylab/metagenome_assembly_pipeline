@@ -21,7 +21,7 @@ You can preview each step of the pipeline under the [overview](#overview) sectio
 - [Section 5: Filtering contigs][section5]
 - [Section 6: Binning][section6]
 - [Section 7: Binning quality evaluation][section7]
-- [Section 8: Binning, taxonomy and bin befinement in An'vio][section8]
+- [Section 8: Binning, taxonomy and bin refinement in An'vio][section8]
 - [Section 9: Functional annotation and basic plots][section9]
 - [Section 10: Functional annotation with PROKKA and Krona plots][section10]
 
