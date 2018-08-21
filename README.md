@@ -80,7 +80,6 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 
 - [PROKKA][prokka-link] 
 - [MinPath][minpath-link] 
-- [MetaPathways][metapathways-link] 
 - [GhostKOALA][ghostkoala-link] 
 
 ### Functional annotation databases
@@ -117,7 +116,6 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 [kaiju-link]: https://github.com/bioinformatics-centre/kaiju
 [prokka-link]: https://github.com/tseemann/prokka
 [minpath-link]: http://omics.informatics.indiana.edu/MinPath/
-[metapathways-link]: https://github.com/hallamlab/metapathways2
 [ghostkoala-link]: https://www.kegg.jp/ghostkoala/
 [cogs-link]: https://www.ncbi.nlm.nih.gov/COG/
 [kegg-link]: https://www.kegg.jp/kegg/
