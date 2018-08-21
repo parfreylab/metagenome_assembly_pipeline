@@ -1,4 +1,9 @@
-# A simple barplot for relative abundances.
+#############################################################
+## Project: Metagenomics assembly pipeline guide
+## Script purpose: A simple barplot for protein categories
+## Author: Kevin Chan
+## Email: kevchan1@alumni.ubc.ca
+#############################################################
 library(optparse)
 
 # read in normalized count data
