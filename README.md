@@ -11,6 +11,10 @@ Prior to getting started, look over the [software list](#exhaustive-list-of-soft
 
 You can preview each step of the pipeline under the [overview](#overview) section.
 
+## Important note about intermediate files
+
+By default, each command here keeps intermediate files during analysis, in case you need to go back a step or need to verify something. However, some files can get **very large**, so please be mindful of the amount of disk space you are using (especially if you are on a lab machine). Can you quickly re-create the files if you need it later? If yes, then delete it.
+
 ## Overview
 
 - [Section 0: Prelude][section0]
