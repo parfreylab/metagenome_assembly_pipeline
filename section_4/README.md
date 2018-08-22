@@ -6,7 +6,7 @@ This section obtains coverage information by mapping reads back to contigs.
 
 Map reads back to the assembly to get coverage information using `bowtie2`. Build the index database with `bowtie2-build` using the contigs outputted from the assembler, followed by samtools to generate a sorted and indexed `.bam` file.
 
-Before building the database, simplify the deflines (headers) of the fasta input file. This is necessary, as An'vio, used in a [later step][section8-link], requires simple deflines in the FASTA file to import. The names in the `.bam` file must also match, hence we simplify first before mapping to avoid repeating this step. Read the section on file formatting in the An'vio tutorial [here][anvi-starter-tutorial-link] for more information. To simplify the headers, run the script `anvi-script-reformat-fasta` like so:
+Before building the database, simplify the deflines (headers) of the fasta input file. This is necessary, as An'vio, used in a [later step][section8-link], requires simple deflines in the FASTA file to import. The names in the `.bam` file must also match, hence we simplify first before mapping to avoid repeating this step. Read the section on file formatting in the An'vio tutorial [here][anvi-starter-tutorial-link] for more information. To simplify the headers, run the script `anvi-script-reformat-fasta`. The `-l` flag specifies the minimum length of a contig to keep. By passing in `0`, we are keeping all the contigs. `--simplify-names`, as expected, simplifies the contig names:
 
 ```bash
 anvi-script-reformat-fasta contigs.fasta -o contigs-fixed.fasta -l 0 --simplify-names 
