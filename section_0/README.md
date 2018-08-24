@@ -41,7 +41,7 @@ This command starts a new screen with session name `YOUR_SESSION_NAME`:
 screen -S YOUR_SESSION_NAME
 ```
 
-To detach from a screen **and not kill the program you are running**, press `CTRL + D`. To get a list of all screens on the current machine, type:
+To detach from a screen **and not kill the program you are running**, press `CTRL + A` followed by  `D`. To get a list of all screens on the current machine, type:
 
 ```bash
 screen -ls
