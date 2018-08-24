@@ -13,6 +13,9 @@ Do the following step using the ZCU, since the `runMetaBat.sh` script requires u
 The authors of MetaBAT also have a short [tutorial][metabat2-binning-tutorial-link] on how to refine parameters passed to `metabat2`. Note that this requires use of `CheckM`, `R` and some custom scripts.
 
 ```bash
+# -t: number of threads to use
+# -v: verbose mode (good for seeing progress)
+# --unbinned: keep all unbinned sequences in a separate fasta file. may be useful later on
 # -m: min contig length (default 2500)
 runMetaBat.sh -t 8 -v --unbinned -m 2000 filtered_contigs.fasta sorted.bam
 # runMetaBat.sh doesn't let you specify the output folder name, so rename it like so
