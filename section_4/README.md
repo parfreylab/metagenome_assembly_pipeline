@@ -32,6 +32,8 @@ bowtie2-build --threads 24 metaspades_results/contigs.fasta db/spades_contigs
 # -1: Files with forward reads, paired with files in -2.
 # -2: Files with reverse reads, paired with files in -1.
 # -U: Files with unpaired reads.
+# -x: the database file.
+# --time: print the time it took to execute the command.
 for f in *_R1.fq.gz; do
     r=${f/_R1/_R2}
     m=${f/_R1/_merged}
