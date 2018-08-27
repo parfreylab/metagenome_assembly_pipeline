@@ -9,7 +9,11 @@ We will use CheckM for quality check of bins. Use the [lineage workflow][checkm-
 Run the following command on the cluster, as CheckM has Linux dependencies. These example commands use bins from MetaBAT, but be sure to run these commands on the outputs of each of the binning programs you used in the previous section.
 
 ```bash
-checkm lineage_wf -t 4 -x fa metabat_bins checkm/
+# -f: write results to a file instead of stdout (the default)
+# -t: number of threads to use
+# -x: file extension for the files which contain bins. in this example, 
+# the bins would be: bin1.fa, bin2.fa, etc.
+checkm lineage_wf -f checkm_file.txt -t 4 -x fa metabat_bins checkm/
 ```
 
 Use CheckM for plots of bin quality. Specifically, use `bin_qa_plot` for a visual representation of completeness, contamination, and strain heterogeneity. [Link][checkm-bin-qa-plot-link] for description of plots.
