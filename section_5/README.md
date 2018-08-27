@@ -18,6 +18,15 @@ Run `blastn` like the following example. Note that the output format should keep
 Depending on how distantly related your contigs are to the `NT` reference, you should consider changing the percent identity (`-perc_identity`) and e-value (`-evalue`) cutoffs. Also, consider changing the flag `-num_threads` depending on the number of jobs a machine has running.
 
 ```bash
+# -db: the name of the database
+# -query: the input fasta file
+# -num_threads: number of threads to use
+# -max_hsps: the maximum number of high scoring pairs
+# -outfmt: the columns from left to right of the output file. see the links above for more explanation
+# -out: output file name and location
+# -perc_identity: the minimum percent identity threshold for a hit to be considered
+# -max_target_seqs: limit the number of matching results to at most 10 (in this example)
+# -evalue: maximum e-value for a target sequence to have
 blastn \
 -db nt \
 -query /parfreylab/kevchan/assembly/idba_ud_contigs/contig.cec.fasta \
