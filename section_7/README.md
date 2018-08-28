@@ -25,7 +25,7 @@ checkm bin_qa_plot -x fa checkm metabat_bins plots
 Use the CheckM utility command `coverage` to get coverage profiles for all sequences within the genome bins created. Coverage profiles are also required for a number of different plots produced by checkM.
 
 ```bash
-checkm coverage -x fa metabat_bins coverage.tsv example_1.bam example_2.bam
+checkm coverage -t 5 -x fa metabat_bins coverage.tsv example_1.bam example_2.bam
 ```
 
 Use the `profile` utility to produce a table with bin size, mapped reads, % mapped reads, % binned populations, and % community. The output defaults to `stdout`, so include the option `-f` (and `--tab_table`) to write to a file. The percentages indicate percentages of reads **mapped** to an assembly.
