@@ -22,11 +22,13 @@ Use CheckM for plots of bin quality. Specifically, use `bin_qa_plot` for a visua
 checkm bin_qa_plot -x fa checkm metabat_bins plots
 ```
 
-Use the CheckM utility command `coverage` to get coverage profiles for all sequences within the genome bins created. Coverage profiles are also required for a number of different plots produced by checkM.
+Use the CheckM utility command `coverage` to get coverage profiles for all sequences within the genome bins created. Coverage profiles are also required for a number of different plots produced by CheckM.
 
 ```bash
 checkm coverage -t 5 -x fa metabat_bins coverage.tsv example_1.bam example_2.bam
 ```
+
+Note that in the above example, you can supply a wildcard for all the BAM files you want to pass into CheckM. For example: `path/to/bams/*.bam`.
 
 Use the `profile` utility to produce a table with bin size, mapped reads, % mapped reads, % binned populations, and % community. The output defaults to `stdout`, so include the option `-f` (and `--tab_table`) to write to a file. The percentages indicate percentages of reads **mapped** to an assembly.
 

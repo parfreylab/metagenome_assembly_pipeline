@@ -17,10 +17,12 @@ The authors of MetaBAT also have a short [tutorial][metabat2-binning-tutorial-li
 # -v: verbose mode (good for seeing progress)
 # --unbinned: keep all unbinned sequences in a separate fasta file. may be useful later on
 # -m: min contig length (default 2500)
-runMetaBat.sh -t 8 -v --unbinned -m 2000 filtered_contigs.fasta sorted.bam
+runMetaBat.sh -t 8 -v --unbinned -m 2000 filtered_contigs.fasta sample_1.bam sample_2.bam sample_n.bam
 # runMetaBat.sh doesn't let you specify the output folder name, so rename it like so
 mv filtered_contigs.fasta.metabat-bins2000 metabat_bins
 ```
+
+Note that in the above example, you can supply a wildcard for all the BAM files you want to pass into MetaBAT. For example: `path/to/bams/*.bam`.
 
 ## MaxBin2
 
