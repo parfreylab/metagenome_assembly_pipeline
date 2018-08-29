@@ -92,8 +92,19 @@ idba_ud \
 -o path/to/output
 ```
 
+## A word on merging assemblies
+
+There are programs out there which take sets of assemblies, and attempts to merge the assemblies to produce a "superassembly", which theoretically should result in a higher quality, more contiguous (by making supercontigs) meta-assembly. While this step would be ideal, the results may only add value to your analysis if your assemblies were high quality in the first place, and may not consistently improve quality either ([source][merging-assemblies-benchmark-link]). However, it is your analysis, and so you are welcome to try this step to see if it improves your assemblies. 
+
+As a side note, the paper compares seven meta-assembly programs: CISA, GAA, GAM_NGS, GARM, Metassembler, MIX, and ZORRO. I (the author, Kevin) have tried and failed at installing [GARM][garm-link] and [Metassembler][metassembler-link] both on lab machines and on the Zoology cluster. Both appear to have dependencies which don't work on macOS and with the version of Linux on the cluster, so use at your own discretion.
+
+As a final note, the last updates for GARM and Metassembler came out in 2015, so it appears that the authors may not be actively supporting the software.
+
 ## Next step
 
 Proceed to [section 3][section3-link].
 
 [section3-link]: ../section_3
+[merging-assemblies-benchmark-link]: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1213-3
+[garm-link]: http://garm-meta-assem.sourceforge.net/
+[metassembler-link]: http://garm-meta-assem.sourceforge.net/
