@@ -156,7 +156,7 @@ done
 
 This step is optional, as not every dataset will require this. If this does not apply, skip to [error correction][error-correction-section-link].
 
-Host genomes can be downloaded from a variety of websites, including [EchinoBase][echinobase-link], the [NCBI][ncbi-link],
+Host genomes can be downloaded from a variety of websites, but you will probably download them from the [NCBI][ncbi-link]. Here are some FTP links for [macroorganisms][ncbi-genomes-macroorganisms-link] (with [instructions][genome-download-instructions-link]), [RefSeq][refseq-link], and [GenBank][genbank-link]. There are more databases out there (ex: [EchinoBase][echinobase-link] for some echinoderms), and you should be able to find them by Google searching `ORGANISM_OF_INTEREST + genome`. If your specific host is not found, then try and find a closely related organism whose genome has been sequenced, and work with that one instead. **Note however, that many host genomes are contaminated with bacterial sequences, so you may need to do some prefiltering first.**
 
 Start by building an index database with the host reference genome using `bowtie2`.
 
@@ -402,3 +402,7 @@ Proceed to [section 2][section2-link].
 [error-correction-section-link]: #error-correction-with-bbmergesh-in-3-phases
 [ncbi-link]: https://www.ncbi.nlm.nih.gov/
 [echinobase-link]: http://www.echinobase.org/Echinobase/
+[ncbi-genomes-macroorganisms-link]: ftp://ftp.ncbi.nlm.nih.gov/genomes/
+[genome-download-instructions-link]: https://www.ncbi.nlm.nih.gov/guide/howto/dwn-genome/
+[refseq-link]: ftp://ftp.ncbi.nih.gov/genomes/refseq/
+[genbank-link]: ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/
