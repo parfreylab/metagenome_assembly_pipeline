@@ -5,7 +5,7 @@ A pipeline to go from raw sequencing data to high quality bins and pretty plots.
 ## Introduction
 
 This is a simple pipeline for analyzing metagenomic data, starting from raw reads to assembly, to binning, to functional analysis. Throughout the pipeline, there 
-will be example commands at each step - however; replace the generic filenames and paths with your own data. 
+will be example commands at each step - **however; replace the generic filenames and paths with your own data.**
 
 Prior to getting started, look over the [software list](#exhaustive-list-of-software-used) and ensure all of it is installed. If you are using the lab machine 'entamoeba', the majority of software will be installed locally. For steps which require the ZCU (Zoology computing unit), you will need to install the software to your own folder if it is not already installed globally.
 
@@ -74,7 +74,7 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 
 ### Taxonomy assignment
 
-- [Kaiju][kaiju-link]
+- [Kaiju][kaiju-link]<sup>1</sup>
 
 ### Manual binning refinement
 

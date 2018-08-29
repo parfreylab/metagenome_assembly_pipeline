@@ -9,7 +9,7 @@ Run `fastQC` and `multiQC` on your raw data to observe sequence quality and stat
 The `fastQC` output comes in 2 files, a .zip and .html file. The .html files can be viewed for each individual sample, and `multiQC` can be used to create and visualize an overall summary of quality statistics across all samples.
 
 ```bash
-# -t number of threads
+# -t: number of threads
 fastqc -t 23 *.fastq.gz -o /path/to/output/dir && multiqc /path/to/output/dir -o /path/to/output/dir
 ```
 
@@ -155,6 +155,8 @@ done
 ## [OPTIONAL] Removal of host sequences (decontamination)
 
 This step is optional, as not every dataset will require this. If this does not apply, skip to [error correction][error-correction-section-link].
+
+Host genomes can be downloaded from a variety of websites, including [EchinoBase][echinobase-link], the [NCBI][ncbi-link],
 
 Start by building an index database with the host reference genome using `bowtie2`.
 
@@ -398,3 +400,5 @@ Proceed to [section 2][section2-link].
 
 [section2-link]: ../section_2
 [error-correction-section-link]: #error-correction-with-bbmergesh-in-3-phases
+[ncbi-link]: https://www.ncbi.nlm.nih.gov/
+[echinobase-link]: http://www.echinobase.org/Echinobase/
