@@ -17,7 +17,9 @@ To get started, a reference database must be downloaded for kaiju to search agai
 makeDB.sh -m -t 12
 ```
 
-If you wish to download different databases, save them to a new folder, `/parfreylab/shared/databases/kaiju_db/DB_NAME/`, where `DB_NAME` is the name of the database you are downloading.
+If you wish to download different databases, save them to a new folder, `/parfreylab/shared/databases/kaiju_db/DB_NAME/`, where `DB_NAME` is the name of the database you are downloading. 
+
+Note that this script may require large amounts of memory, depending on the size of the database you are downloading. Furthermore, this script doesn't work on the cluster, **and so you will need to run it on a lab machine**. After that, you can delete all the files except for the three mentioned above, and then copy those three files to `/parfreylab/shared/databases/kaiju_db/DB_NAME/`.
 
 Continue with the [guide][anvi-import-kaiju-taxa-link] to assign and import taxonomies into An'vio.
 
