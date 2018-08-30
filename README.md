@@ -35,7 +35,7 @@ Any issues or clarification needed can be raised by creating a new issue in this
 
 ## Exhaustive list of software used
 
-Note that many of these tools can be installed through conda or homebrew. Try those options first before a manual install.
+Note that many of these tools can be installed through [conda][conda-link] or [homebrew][homebrew-link]. Try those options first before a manual install.
 
 ### Quality metrics/visualization 
 
@@ -103,6 +103,8 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 <sup>1</sup>: Linux/cluster use only <br/>
 <sup>2</sup>: High memory usage
 
+[conda-link]: https://conda.io/docs/user-guide/getting-started.html
+[homebrew-link]: https://brew.sh/
 [fastqc-link]: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 [multiqc-link]: http://multiqc.info/
 [bbtools-link]: https://sourceforge.net/projects/bbmap/
