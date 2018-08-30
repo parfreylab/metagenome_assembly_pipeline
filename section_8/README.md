@@ -37,7 +37,7 @@ Note that different binning software will title the bin names differently, and s
 You can also do this all in one line:
 
 ```bash
-awk '{printf "%s\t%s\n", $1, $2}' coverage.tsv | sed 's/\./\_/g' > external_binning_results.txt
+awk '{printf "%s\t%s\n", $1, $2}' coverage.tsv | sed 's/\./\_/g' > tmp && mv tmp external_binning_results.txt
 ```
 
 And now your external binning results should look like this:
