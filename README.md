@@ -25,7 +25,7 @@ By default, each command here keeps intermediate files during analysis, in case 
 - [Section 5: Filtering contigs][section5]
 - [Section 6: Binning][section6]
 - [Section 7: Binning quality evaluation][section7]
-- [Section 8: Binning, taxonomy and bin refinement in An'vio][section8]
+- [Section 8: Binning, taxonomy and bin refinement in Anvi'o][section8]
 - [Section 9: Functional annotation and basic plots][section9]
 - [Section 10: Functional annotation with PROKKA and Krona plots][section10]
 
@@ -63,14 +63,14 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 
 ### Binning
 
-- [CONCOCT][concoct-link] (built-in in An'vio) 
+- [CONCOCT][concoct-link] (built-in in Anvi'o) 
 - [MetaBAT][metabat-link]<sup>1</sup> 
 - [MaxBin2][maxbin2-link]<sup>1</sup> 
 
 ### Binning quality evaluation
 
 - [CheckM][checkm-link]<sup>1</sup> 
-- [An'vio][anvio-link] 
+- [Anvi'o][anvio-link] 
 
 ### Taxonomy assignment
 
@@ -78,7 +78,7 @@ Note that many of these tools can be installed through conda or homebrew. Try th
 
 ### Manual binning refinement
 
-- [An'vio][anvio-link] 
+- [Anvi'o][anvio-link] 
 
 ### Functional annotation
 

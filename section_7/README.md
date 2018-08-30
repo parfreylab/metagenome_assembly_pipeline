@@ -4,7 +4,7 @@ This section evaluates the quality of the binning approaches and bins obtained u
 
 ## Binning quality checking, lineage, and plots/statistics
 
-We will use CheckM for quality check of bins. Use the [lineage workflow][checkm-lineage-wf-link] to place the genome bins into a reference genome tree and to identify marker genes and estimate contamination. Note that An'vio can also do completeness and redundancy estimates (via `anvi-summarize`), but these reports are likely to differ based on their different methods and different sets of marker genes.
+We will use CheckM for quality check of bins. Use the [lineage workflow][checkm-lineage-wf-link] to place the genome bins into a reference genome tree and to identify marker genes and estimate contamination. Note that Anvi'o can also do completeness and redundancy estimates (via `anvi-summarize`), but these reports are likely to differ based on their different methods and different sets of marker genes.
 
 Run the following command on the cluster, as CheckM has Linux dependencies. These example commands use bins from MetaBAT, but be sure to run these commands on the outputs of each of the binning programs you used in the previous section.
 

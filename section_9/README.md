@@ -4,7 +4,7 @@ This next section uses two databases: the NCBI's Clusters of Orthologous Genes (
 
 ## COGs database
 
-An'vio provides a simple way to functionally annotate contigs by using NCBI's COGs. The first thing you need to do is to set up the COGs database. This can be done by running the `anvi-setup-ncbi-cogs` command. Note however, if you do not have superuser privileges, or you are working on the cluster, then you will need to pass in the `--cog-data-dir` flag:
+Anvi'o provides a simple way to functionally annotate contigs by using NCBI's COGs. The first thing you need to do is to set up the COGs database. This can be done by running the `anvi-setup-ncbi-cogs` command. Note however, if you do not have superuser privileges, or you are working on the cluster, then you will need to pass in the `--cog-data-dir` flag:
 
 ```bash
 anvi-setup-ncbi-cogs --cog-data-dir path/to/cogs/db
@@ -20,7 +20,7 @@ If you installed the COGs database in the default directory successfully, you do
 
 ## KEGG database
 
-Since the KEGG database operates on a subscription based model, we need to work around this by using their online database (free), as well as their search tool, ghostKOALA (also free). There is a fairly comprehensive blog post [here][anvi-ghostkoala-kegg-annotation-link] on obtaining and importing KEGG annotations into An'vio. However, for this to work note the following:
+Since the KEGG database operates on a subscription based model, we need to work around this by using their online database (free), as well as their search tool, ghostKOALA (also free). There is a fairly comprehensive blog post [here][anvi-ghostkoala-kegg-annotation-link] on obtaining and importing KEGG annotations into Anvi'o. However, for this to work note the following:
 
 - Rather than use `anvi-get-aa-sequences-for-gene-calls`, which no longer works, use:
 
@@ -36,11 +36,11 @@ anvi-get-sequences-for-gene-calls --get-aa-sequences -c contigs.db -o protein-se
 echo -e "contig\taccession_id" > .temp && cat user_ko.txt >> .temp && mv .temp user_ko.txt
 ```
 
-This isn't necessary, and will actually cause an error when trying to import the annotations back to An'vio using `anvi-import-functions`. Specifically, refer to this [issue][ghost-koala-parser-issue-link] to see the error. As a result, you can skip that step.
+This isn't necessary, and will actually cause an error when trying to import the annotations back to Anvi'o using `anvi-import-functions`. Specifically, refer to this [issue][ghost-koala-parser-issue-link] to see the error. As a result, you can skip that step.
 
 ## Plotting the gene calls
 
-Once both COGs and KEGG functional annotations have been imported into An'vio, they can be exported bin by bin to make barplots. Custom scripts are available to make cursory barplots to visualize the functional annotations from each bin. These scripts are found under the [scripts][scripts-link] directory of this repository. Ultimately, this section goes from the gene calls files exported from An'vio to a tab-delimited text file required as input to the plotting script `barplot_rel_abundance.R`. To do this, gene calls from each bin need to be exported, and then the scripts can be run downstream for formatting and plotting.
+Once both COGs and KEGG functional annotations have been imported into Anvi'o, they can be exported bin by bin to make barplots. Custom scripts are available to make cursory barplots to visualize the functional annotations from each bin. These scripts are found under the [scripts][scripts-link] directory of this repository. Ultimately, this section goes from the gene calls files exported from Anvi'o to a tab-delimited text file required as input to the plotting script `barplot_rel_abundance.R`. To do this, gene calls from each bin need to be exported, and then the scripts can be run downstream for formatting and plotting.
 
 If you need help with running the custom scripts, pass in the `-h` flag.
 
