@@ -6,6 +6,52 @@ This section imports contigs generated from previous sections into An'vio, bins 
 
 To get started with An'vio, check out this starter guide: [link][anvi-start-link]. Focus on generating the contigs database, running HMMs, profiling BAM files and merging profiles. Merging profiles will by default bin the contigs (splits) using CONCOCT. To compare multiple binning approaches, they need to be imported into An'vio. Follow this [guide][anvi-multi-bin-compare-link] for information on how to do that.
 
+## Tip for importing external binning results
+
+In the section to [import external binning results][anvi-multi-bin-compare-link] in the above tutorial, it states that the file which contains the binning results must be tab delimited, with the first column containing the contig names, and the second column containing the bin assignment. Example file:
+
+```
+contig_1	bin.1
+contig_2	bin.1
+contig_3	bin.2
+contig_4	unbinned
+contig_5	bin.2
+```
+
+In the [previous][section7-link] section, `checkm coverage` was ran, and produced a file, `coverage.tsv`. This file is a tab delimited text file that contains coverage information in each column. But more importantly, the first two columns contain the contig names and bin assignments. **So, you can subset the first two columns of this file to generate your external binning results file**.
+
+To subset the first two columns with a tab between them, use `awk`:
+
+```bash
+awk '{printf "%s\t%s\n", $1, $2}' coverage.tsv > external_binning_results.txt
+```
+
+You may have noticed that the bin names in the example external binning results file above contains delimiters Anvi'o doesn't like (namely the `.` characters). Check to see if any of the bin names contain delimiters other than underscores - these will need to be changed to underscores. Use `sed` to achieve this:
+
+```bash
+sed 's/\./\_/g' external_binning_results.txt > tmp && mv tmp external_binning_results.txt
+```
+
+Note that different binning software will title the bin names differently, and so you should adjust the `sed` command accordingly. But in the case of MetaBAT and MaxBin2, both will delimit bin names using `.`.
+
+You can also do this all in one line:
+
+```bash
+awk '{printf "%s\t%s\n", $1, $2}' coverage.tsv | sed 's/\./\_/g' > external_binning_results.txt
+```
+
+And now your external binning results should look like this:
+
+```
+contig_1	bin_1
+contig_2	bin_1
+contig_3	bin_2
+contig_4	unbinned
+contig_5	bin_2
+```
+
+You can now safely import this collection into Anvi'o.
+
 ## Identifying taxonomy for each bin using Kaiju
 
 Taxonomic classification of bins is useful for determining what each bin contains, and is also useful for manual bin refinement (next section). Kaiju is a taxonomic classifier which uses Burrows-Wheeler transform to find maximum (in)exact matches at the protein level. Conveniently, there is a [guide][anvi-import-kaiju-taxa-link] on how to import taxonomic annotations from kaiju into An'vio. Kaiju is Linux only, and therefore must be run on the cluster. Note that for the majority of databases, Kaiju will require lots of RAM, and hence it is safest to run it on **crunch01** to avoid any problems.
@@ -46,4 +92,5 @@ Proceed to [section 9][section9-link].
 [anvi-veronica-refine-bins-link]: http://merenlab.org/2017/05/11/anvi-refine-by-veronika/
 [kaiju-setup-link]: https://github.com/bioinformatics-centre/kaiju#creating-the-reference-database-and-index
 [kaiju-section-link]: #identifying-taxonomy-for-each-bin-using-kaiju
+[section7-link]: ../section_7
 [section9-link]: ../section_9
