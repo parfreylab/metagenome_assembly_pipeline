@@ -28,7 +28,7 @@ Since the KEGG database operates on a subscription based model, we need to work 
 anvi-get-sequences-for-gene-calls --get-aa-sequences -c contigs.db -o protein-sequences.fa
 ```
 
-- Under the section ["generate the KEGG orthology table"][anvi-gen-kegg-ortho-table-link], the current `wget` command doesn't work (URL is a blank result). Instead, use the already downloaded table from the [git repository][ghost-koala-parser-link]. You will need to clone the git repository anyway, so you should already have this table.
+- Under the section ["generate the KEGG orthology table"][anvi-gen-kegg-ortho-table-link], the current `wget` command doesn't work (URL is a blank result). Instead, go directly to [this][kegg-ortho-table-link] link, and then on the top menu, click the option `Download htext`. You can continue following the guide with this file.
 
 - Under the section ["parsing the results from GhostKOALA"][anvi-parse-ghostkoala-results-link], there is a line of code which is ran to add headers to the output file:
 
@@ -136,6 +136,7 @@ Proceed to [section 10][section10-link].
 [anvi-cog-annotation-link]: http://merenlab.org/2016/10/25/cog-annotation/
 [anvi-ghostkoala-kegg-annotation-link]: http://merenlab.org/2018/01/17/importing-ghostkoala-annotations/
 [anvi-gen-kegg-ortho-table-link]: http://merenlab.org/2018/01/17/importing-ghostkoala-annotations/#generate-the-kegg-orthology-table
+[kegg-ortho-table-link]: https://www.genome.jp/kegg-bin/get_htext?ko00001
 [anvi-parse-ghostkoala-results-link]: http://merenlab.org/2018/01/17/importing-ghostkoala-annotations/#parsing-the-results-from-ghostkoala
 [ghost-koala-parser-link]: https://github.com/edgraham/GhostKoalaParser/blob/master/samples/KO_Orthology_ko00001.txt
 [ghost-koala-parser-issue-link]: https://github.com/edgraham/GhostKoalaParser/issues/3
